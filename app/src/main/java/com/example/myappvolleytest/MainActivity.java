@@ -28,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         final TextView textViewTest = this.findViewById(R.id.textViewTest);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String testURL = "https://anapioficeandfire.com/api/characters/583";
+        /*String testURL = "https://anapioficeandfire.com/api/characters/583";*/
+        /*String testURL = "https://age-of-empires-2-api.herokuapp.com/api/v1";*/
+
+        String testURL = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, testURL,
                 new Response.Listener<String>() {
